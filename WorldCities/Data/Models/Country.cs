@@ -31,5 +31,7 @@ namespace WorldCities.Data.Models
         /// Country code (in ISO 3166-1 ALPHA-3 format)
         /// </summary>
         public string ISO3 { get; set; }
+        //List of all the cities for this country
+        public virtual List<City> Cities {get ;set;}
     }
 }
