@@ -36,7 +36,10 @@ public class City
         /// <summary>
         /// Country Id (foreign key)
         /// </summary>
+		[ForeignKey(nameof(Country))]
         public int CountryId { get; set; }
+		// Navigational property
+		public virtual Country Country {get; set;}
     }
 
 }
